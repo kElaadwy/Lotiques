@@ -35,10 +35,12 @@
         {
             var imagePath = "~/images/" + antique.ImageTitle;
             <div class="col-4 mb-5">
-                <img src="@imagePath" class="w-100 mainImage" asp-append-version="true" />
+
                 <a class="btn btn-primary mt-1" asp-area="" asp-page="CheckOut/CheckOut"
-                asp-route-ImageTitle="@antique.ImageTitle" asp-route-Name="@antique.Name"
-                asp-route-Price ="@antique.FinalPrice">Order </a>
+               asp-route-ImageTitle="@antique.ImageTitle" asp-route-Name="@antique.Name"
+               asp-route-Price="@antique.FinalPrice">
+                    <img src="@imagePath" class="mainImage" style="width:200px"; height:200px;" asp-append-version="true" />
+                </a>
                 <br />
             </div>
 

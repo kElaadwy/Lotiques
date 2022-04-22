@@ -1,0 +1,37 @@
+﻿@page
+@model Lotiques.Pages.OrderedModel
+@{
+}
+<h3>Orders</h3>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                id
+            </th>
+            <th>
+                name
+            </th>
+            <th>
+                price
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var row in Model.Orders)
+        {
+            <tr>
+                <td>
+                    @row.Id
+                </td>
+                <td>
+                    @row.Name
+                </td>
+                <td>
+                    @row.BasePrice
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
