@@ -1,0 +1,19 @@
+﻿@page
+@model Lotiques.Pages.CheckOut.CheckOutModel
+@{
+}
+
+@{
+    var imagePath = "~/images/" + @Model.ImageTitle;
+}
+<h1>Your Order</h1>
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        <img class="w-100" src=@imagePath asp-append-version="true" />
+        <p>Your order for @Model.Name is ready!</p>
+        <p>Total price is: @Model.Price</p>
+        <br />
+        <a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="/CheckOut/ThankYou">Confirm Order</a>
+    </div>
+</div>
+

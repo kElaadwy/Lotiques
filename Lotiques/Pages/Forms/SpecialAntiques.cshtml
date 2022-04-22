@@ -1,0 +1,23 @@
+﻿@page
+@model Lotiques.Pages.Forms.SpecialAntiquesModel
+@{
+}
+
+<div class="text-center container">
+    <h1>Create your own antique</h1>
+    <form class="mx-auto mb-5 mt-5 px-5 pb-5 pt-5 rounded-5 bg-light" method="post">
+        <input type="text" asp-for="Antique.Name" placeholder="Give you antique a name .."/>
+        <br />
+        <input type="text" asp-for="Antique.Color" placeholder="preferred color .. "/>
+        <br />
+        <input type="text" asp-for="Antique.Material" placeholder="preferred material .."/>
+        <br />
+        <input type="checkbox" asp-for="Antique.HandMade" placeholder="do want it to be hand made?" /> do want it to be hand made?
+        <br />
+        <input type="checkbox" asp-for="Antique.Printed" placeholder="do want it's cover to be 3D printed?" /> do want it's cover to be 3D printed?
+        <br />
+
+
+        <button class="btn btn-primary mt-1" type="submit">Order my antique</button>
+    </form>
+</div>
